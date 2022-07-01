@@ -72,7 +72,7 @@ int main()
 					cin>> array[3];
 					cout<< "enter Z2 ";
 					cin>>array[5];
-					cout << arrfoo(array,size);
+					cout <<"distance = "<< arrfoo(array,size)<<endl;;
 					
 					system("pause");
 				}
