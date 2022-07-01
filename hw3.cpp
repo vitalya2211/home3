@@ -20,6 +20,14 @@ double arrfoo(int* array,int size)
 	return result;
 	
 }
+void cubfun(int N)
+{
+	for (int i=0;i<N;)
+	{
+		i++;
+		cout << i*i*i<<'\n';
+	}
+}
 int main()
 {
 	/*1.проверка, является ли пятизначное число палиндромом (14233->no; 12821->yes)
@@ -72,6 +80,8 @@ int main()
 			case 3:
 				{cout<< "enter N ";
 				cin>>n;
+				cubfun(n);
+				system("pause");
 				}
 				break;
 			case 0:
