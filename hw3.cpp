@@ -1,5 +1,17 @@
 #include <iostream>
 using namespace std;
+void foo1(int a)
+{
+	int temp=a,b=0;
+	while(temp!=0)
+	{
+		b=b*10+temp%10;
+		temp/=10;
+	}
+	if (a==b)
+		cout << "palindrom\n";
+	else cout<< "no :(\n";
+}
 int main()
 {
 	/*1.проверка, является ли пятизначное число палиндромом (14233->no; 12821->yes)
@@ -19,8 +31,11 @@ int main()
 	  switch (num)
 	  	{
 	  		case 1:
-	  			{cout  << "enter 5digit number "; 
-	  			cin>> n;
+	  			{
+				  cout  << "enter 5digit number "; 
+				  cin >> n;
+	  				foo1(n);	 
+	  				system ("pause");
 				  }
 				  break;
 			case 2:
